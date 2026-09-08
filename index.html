@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" data-theme="nord">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>My Hot Take</title>
+
+    <!--
+      THE THREE TAGS. Tailwind and daisyUI, no build step, nothing installed.
+      Open this file with Live Server and start working.
+
+      Two honest notes:
+        1. The last tag is Tailwind's BROWSER build. Tailwind's own docs say it
+           is "designed for development purposes only, and is not intended for
+           production." That is fine for now. Unit 8 replaces it with a real
+           built stylesheet, because publishing to a public address is where
+           "development only" stops being acceptable.
+        2. These load from jsdelivr, which means jsdelivr sees a request from
+           every reader of your site. That is your call to make on your own
+           project. Read Unit 8's "what a page costs its reader" before you
+           decide it does not matter.
+    -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Your own rules go last, so they win. See styles.css. -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!--
+    THIS PAGE IS DELIBERATELY ALMOST EMPTY.
+
+    Everything that is not the lesson is already done: the doctype, the meta
+    tags, Tailwind, daisyUI, and a stylesheet of your own. What is missing is
+    the page, and you are about to build it in class, one stage at a time.
+
+    Open it with Live Server now. You should see an unstyled heading and one
+    line of text. That is correct — it means the wiring works and the design
+    has not started.
+
+    THEME. data-theme is on the <html> tag above. Change "nord" to any daisyUI
+    theme — synthwave, forest, cupcake, dracula, retro, autumn, lofi, night —
+    and the whole page changes. Five seconds, and it is the fastest way to find
+    the mood you are after.
+  -->
+  <!--
+    The two classes on <body> are WIRING, not design: they tell the page to use
+    the theme's own ground and ink. Without them the theme you pick above would
+    change nothing you can see, because nothing would be asking for its colours.
+  -->
+  <body class="bg-base-100 text-base-content">
+    <!--
+      STAGE ONE — the shell.
+      A hot take is one screen and one opinion. Right now this text runs the
+      full width of the window, which is unreadable on a laptop and is the
+      problem a container exists to solve.
+
+      Wrap the two elements below in a div, then give that div a width ceiling,
+      centre it, and let it breathe.
+    -->
+    <h1>Gym class should start after 9am</h1>
+    <p>Nobody has ever done their best mile at 7:40 in the morning.</p>
+
+    <!--
+      SWAP THE TAKE FOR YOUR OWN BEFORE STAGE TWO. Every stage from here builds
+      on this page, and it is far easier to judge a design when the words are
+      ones you actually mean.
+    -->
+
+    <!--
+      STAGE TWO — the argument, in three cards.
+      Container, row, columns. Decide the whole first, then divide it. Three
+      reasons, side by side, each one a daisyUI card.
+
+      Build it here.
+    -->
+
+    <!--
+      STAGE THREE — make it survive a phone.
+      Three columns on a laptop is one unreadable column-and-a-bit on a phone.
+      Start from the phone case and add the wide case back with a breakpoint
+      prefix. Check 380, 768 and full width before you call it done.
+
+      This stage edits stage two rather than adding to it.
+    -->
+
+    <!--
+      STAGE FOUR — one media query, written by hand.
+      The prefixes are a convenience over ordinary CSS. Write one yourself once,
+      in styles.css, so the prefix stops being magic.
+    -->
+
+    <!--
+      FOOTER. Your name, and the credits.
+      Every image you add needs its creator, its source and its licence
+      recorded here. If you cannot write that line, you do not know whether you
+      are allowed to use the image.
+    -->
+  </body>
+</html>

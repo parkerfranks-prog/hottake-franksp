@@ -1,0 +1,56 @@
+/* Your own rules. This file loads AFTER Tailwind and daisyUI, so anything you
+ * write here wins a tie.
+ *
+ * Keep it short. If you are writing a lot of CSS here, check whether a utility
+ * class already does it — that is what Unit 2 was for.
+ */
+
+/* PALETTE — "…"
+ *
+ * Name the mood in a sentence that describes a place or a moment, then list
+ * your colours and what job each one does. This block is what you check new
+ * decisions against later.
+ *
+ *   primary   #______   the action colour: buttons, links
+ *   base-100  #______   the page ground
+ *   base-200  #______   cards, one step up from the ground
+ *   accent    #______   the one thing allowed to shout
+ */
+
+/* Redeclare the theme's slots to make them yours. Everything that asked for
+ * `primary` follows — you do not have to touch the markup.
+ *
+ * Change "nord" to whatever theme you set on <html>.
+ */
+[data-theme='nord'] {
+  /* --color-primary: #______; */
+  /* --color-primary-content: #______; */
+  /* --color-accent: #______; */
+}
+
+/* TYPE
+ *
+ * Two faces: one for headings, chosen for tone; one for body, chosen for
+ * readability at small sizes. If you load them from Google Fonts, the <link>
+ * goes in index.html above this file.
+ */
+/*
+body { font-family: '______', sans-serif; }
+h1, h2, .card-title { font-family: '______', serif; }
+*/
+
+/* STAGE FOUR — your media query, by hand.
+ *
+ * Read one out loud before you write one: "when the screen is at most 640
+ * pixels wide, this rule applies." Everything outside the block applies
+ * always; everything inside applies only under that condition.
+ *
+ * Give an element in index.html a class of your own, then change one stated
+ * property on it below a stated width. One rule is enough — the point is that
+ * you have written the thing the sm:/md:/lg: prefixes are shorthand for.
+ */
+/*
+@media (max-width: 640px) {
+  .______ { ______: ______; }
+}
+*/
