@@ -6,7 +6,7 @@
  */
 
 /* PALETTE — "…"
- *
+ 
  * Name the mood in a sentence that describes a place or a moment, then list
  * your colours and what job each one does. This block is what you check new
  * decisions against later.
@@ -19,13 +19,18 @@
 
 /* Redeclare the theme's slots to make them yours. Everything that asked for
  * `primary` follows — you do not have to touch the markup.
- *
+ *https://coolors.co/335c67-fff3b0-e09f3e-9e2a2b-540b0e
  * Change "nord" to whatever theme you set on <html>.
  */
 [data-theme='nord'] {
-  /* --color-primary: #______; */
-  /* --color-primary-content: #______; */
-  /* --color-accent: #______; */
+  --color-primary: #9E2A2B; 
+   --color-primary-content: #E09F3E;
+ --color-Grey: #335C67; 
+ --color-custard: #FFF3B0;
+--color-red: #540B0E;
+--color-red: #9E2A2B;
+--color-orange: #E09F3E;
+
 }
 
 /* TYPE
