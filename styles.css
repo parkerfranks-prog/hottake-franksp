@@ -30,32 +30,15 @@
 --color-red: #540B0E;
 --color-red: #9E2A2B;
 --color-orange: #E09F3E;
-
+ 
 }
 
-/* TYPE
- *
- * Two faces: one for headings, chosen for tone; one for body, chosen for
- * readability at small sizes. If you load them from Google Fonts, the <link>
- * goes in index.html above this file.
- */
-/*
-body { font-family: '______', sans-serif; }
-h1, h2, .card-title { font-family: '______', serif; }
-*/
-
-/* STAGE FOUR — your media query, by hand.
- *
- * Read one out loud before you write one: "when the screen is at most 640
- * pixels wide, this rule applies." Everything outside the block applies
- * always; everything inside applies only under that condition.
- *
- * Give an element in index.html a class of your own, then change one stated
- * property on it below a stated width. One rule is enough — the point is that
- * you have written the thing the sm:/md:/lg: prefixes are shorthand for.
- */
-/*
-@media (max-width: 640px) {
-  .______ { ______: ______; }
+.hero{
+  background-image: url("https://static.vecteezy.com/system/resources/previews/022/994/042/non_2x/the-pepperoni-pizza-and-a-piece-of-streched-cheese-pizza-with-ai-generated-free-photo.jpg");
 }
-*/
+
+.hero h1 {
+  text-shadow: 4px 4px 8px #540B0E;
+  font-size: 70px;
+  color: var(--color-custard)
+}
