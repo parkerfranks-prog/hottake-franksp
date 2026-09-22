@@ -30,7 +30,10 @@
 --color-red: #540B0E;
 --color-red: #9E2A2B;
 --color-orange: #E09F3E;
- 
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.146);
 }
 
 .hero{
